@@ -13,6 +13,9 @@
 body {
     font-family: "Poppins", sans-serif;
     background-color: #ffffff;
+}
+
+.body-section {
     margin: auto 8.75vw;
 }
 
@@ -93,7 +96,11 @@ body {
     border-radius: 10px;
 }
 
-.main-content .navs button {
+.main-content .navs a {
+    text-decoration: none;
+}
+
+.main-content .navs a button {
     display: block;
     width: 252px;
     height: 64px;
@@ -103,7 +110,78 @@ body {
     font-size: 20px;
     border-radius: 10px;
 }
-.main-content .navs button:last-child {
+.main-content .navs a:last-child button {
     background-color: #dd0000;
     color: #ffffff;
+}
+
+/* Blogs section */
+
+.blogs-container {
+    margin-left: 1.2vw;
+}
+
+.blogs {
+    /* margin-left: 1.2vw; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.2vw;
+    row-gap: 24px;
+}
+
+.blogs .blog {
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+}
+
+.blogs .blog > img {
+    width: 100%;
+}
+
+.blogs .blog .blog-details {
+    margin-left: 1.1vw;
+}
+
+.blogs .blog .blog-details button {
+    display: block;
+    border: 1px solid #161616;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #161616;
+    padding: 4px 17px;
+    margin-top: 24px;
+    margin-bottom: 15px;
+}
+
+.blogs .blog .blog-details h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #161616;
+    margin-bottom: 20px;
+}
+
+.blogs .blog .blog-details .blog-info {
+    margin-bottom: 20px;
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: rgba(22, 22, 22, 0.7);
+    column-gap: 30px;
+}
+.blog-time,
+.blog-comment {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+/* Footer Style*/
+footer {
+    height: 444px;
+    background-color: #161616;
+    margin-top: 130px;
 }
