@@ -61,7 +61,7 @@ body {
     margin-top: 30px;
     text-align: center;
 }
-.banner-details button i{
+.banner-details button i {
     padding-left: 10px;
     opacity: 80%;
 }
@@ -73,4 +73,37 @@ body {
 
 .banner-image img {
     width: 100%;
+}
+
+/* Main Content Section */
+.main-content {
+    margin-top: 130px;
+    display: grid;
+    grid-template-columns: 312px 1fr;
+}
+
+.main-content .navs {
+    width: 312px;
+    height: 312px;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.main-content .navs button {
+    display: block;
+    width: 252px;
+    height: 64px;
+    background-color: #ffffff;
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.main-content .navs button:last-child {
+    background-color: #dd0000;
+    color: #ffffff;
 }
