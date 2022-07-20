@@ -1,0 +1,17 @@
+/* Match Container Section */
+.match-container {
+    margin-left: 1.2vw;
+}
+
+.matches {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.2vw;
+    row-gap: 24px;
+}
+
+.matches .match {
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+}
