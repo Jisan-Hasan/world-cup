@@ -70,3 +70,33 @@
 
     color: #4d4d4d;
 }
+
+/* Responsive Design for Mobile Device*/
+@media screen and (max-width: 688px) {
+    /* Main Content Blogs Section */
+
+    .matches {
+        /* margin-left: 1.2vw; */
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 24px;
+    }
+}
+
+/* Responsive Design for Tablet Device */
+@media screen and (min-width: 689px) and (max-width: 992px) {
+
+    /* Main Content Blogs Section */
+    .match-container {
+        margin-top: 30px;
+    }
+
+    .matches {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+    
+
+}

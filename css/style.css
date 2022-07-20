@@ -54,8 +54,9 @@ body {
     line-height: 26px;
     color: #ffffff;
     margin-top: 20px;
+    margin-bottom: 50px;
 }
-.banner-details button {
+.banner-details a {
     padding: 16px 25px;
     background: #dd0000;
     color: #ffffff;
@@ -63,8 +64,9 @@ body {
     border-radius: 5px;
     margin-top: 30px;
     text-align: center;
+    text-decoration: none;
 }
-.banner-details button i {
+.banner-details a i {
     padding-left: 10px;
     opacity: 80%;
 }
@@ -177,6 +179,73 @@ body {
     column-gap: 10px;
 }
 
+/* Special View All Button   */
+.view-all-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 62px;
+    display: none;
+}
+.view-all-btn a {
+    text-decoration: none;
+    background-color: #dd0000;
+    border-radius: 5px;
+    padding: 12px 29px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+/* Footer Style*/
+footer {
+    background-color: #161616;
+    margin-top: 130px;
+    text-align: center;
+    padding-top: 130px;
+    padding-bottom: 35px;
+}
+
+footer h2 {
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer hr {
+    margin: 50px 8vw;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-nav {
+    margin-left: 8vw;
+    margin-right: 8vw;
+    display: flex;
+    justify-content: center;
+    column-gap: 5vw;
+    flex-wrap: wrap;
+    line-height: 40px;
+}
+.footer-nav a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #b9b9b9;
+}
+
+.social-icon {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    column-gap: 3vw;
+}
+.social-icon .icon {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+/* Design for Small Device */
 /* -------------------- */
 @media screen and (max-width: 688px) {
     /* Top banner Section */
@@ -205,13 +274,13 @@ body {
     .banner-details p span {
         display: none;
     }
-    .banner-details button {
+    .banner-details a {
         margin-top: 16px;
-        margin-bottom: 16px;
         padding: 8px 12px;
     }
 
     .banner-image {
+        margin-top: 30px;
         width: 70%;
     }
 
@@ -259,77 +328,121 @@ body {
         row-gap: 24px;
     }
 
-    /* need to be done */
+    /* Footer Style*/
+    footer {
+        margin-top: 24px;
+        padding-top: 24px;
+    }
 
-    .view-all-btn {
-        display: none !important;
+    footer h2 {
+        font-size: 22px;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        row-gap: 24px;
+    }
+
+    .social-icon {
+        column-gap: 7vw;
+    }
+    .social-icon .icon {
+        font-size: 20px;
     }
 }
 
-/* Special View All Button   */
-.view-all-btn {
-    display: flex;
-    justify-content: center;
-    margin-top: 62px;
-    display: none;
-}
-.view-all-btn a {
-    text-decoration: none;
-    background-color: #dd0000;
-    border-radius: 5px;
-    padding: 12px 29px;
-    font-weight: 400;
-    font-size: 20px;
-    color: #ffffff;
-}
+/* Responsive design for Medium Size Device */
 
-/* Footer Style*/
-footer {
-    height: 444px;
-    background-color: #161616;
-    margin-top: 130px;
-    text-align: center;
-    padding-top: 130px;
-}
+@media screen and (min-width: 689px) and (max-width: 992px) {
+    .body-section {
+        margin: auto 6vw;
+    }
 
-footer h2 {
-    font-weight: 600;
-    font-size: 40px;
-    text-align: center;
-    color: #ffffff;
-}
+    /* Top Banner Responsive Design */
 
-footer hr {
-    margin: 50px 8vw;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
+    .banner-details h1 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+    .banner-details p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .banner-details p span {
+        display: none;
+    }
+    .banner-details a {
+        margin-bottom: 16px;
+    }
 
-.footer-nav {
-    margin-left: 8vw;
-    margin-right: 8vw;
-    display: flex;
-    justify-content: center;
-    column-gap: 5vw;
-    flex-wrap: wrap;
-    line-height: 40px;
-}
-.footer-nav a {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
-    color: #b9b9b9;
-}
+    .banner-image {
+        width: 70%;
+    }
 
-.social-icon {
-    margin-top: 35px;
-    display: flex;
-    justify-content: center;
-    column-gap: 3vw;
-}
-.social-icon .icon {
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 25px;
-}
+    .banner-image img {
+        width: 100%;
+    }
 
-/* Design for Small Device */
+    /* Main Content nav Section */
+    .main-content {
+        margin-top: 24px;
+        display: block;
+    }
+
+    .main-content .navs {
+        width: 100%;
+        height: auto;
+        background-color: #ffffff;
+        padding-top: 24px;
+        display: flex;
+        flex-direction: row;
+        column-gap: 2vw;
+    }
+
+    .main-content .navs a {
+        border: 1px solid #e8e8e8;
+    }
+
+    /* Main Content Blogs Section */
+    .blogs-container {
+        margin-top: 30px;
+    }
+
+    .blogs {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+    .hidden-blog {
+        display: none;
+    }
+
+    /* View all Button */
+    .view-all-btn {
+        display: flex;
+    }
+
+    /* Footer Style*/
+    footer {
+        margin-top: 70px;
+        padding-top: 70px;
+    }
+
+    footer h2 {
+        font-size: 40px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .footer-nav {
+        line-height: 50px;
+    }
+
+    .social-icon {
+        column-gap: 7vw;
+    }
+    .social-icon .icon {
+        font-size: 20px;
+    }
+}
