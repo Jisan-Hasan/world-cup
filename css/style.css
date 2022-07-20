@@ -40,6 +40,7 @@ body {
 
 .banner-details {
     padding-left: 6.625vw;
+    padding-bottom: 30px;
 }
 
 .banner-details h1 {
@@ -65,7 +66,9 @@ body {
     margin-top: 30px;
     text-align: center;
     text-decoration: none;
+    margin-bottom: 30px;
 }
+
 .banner-details a i {
     padding-left: 10px;
     opacity: 80%;
