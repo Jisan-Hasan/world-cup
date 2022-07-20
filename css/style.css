@@ -106,6 +106,7 @@ body {
     text-align: center;
     padding-top: 17px;
     padding-bottom: 17px;
+    color: #161616;
 }
 .main-content .navs a:last-child {
     background-color: #dd0000;
@@ -176,6 +177,23 @@ body {
     column-gap: 10px;
 }
 
+/* Special View All Button   */
+.view-all-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 62px;
+    display: none;
+}
+.view-all-btn a {
+    text-decoration: none;
+    background-color: #dd0000;
+    border-radius: 5px;
+    padding: 12px 29px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+}
+
 /* Footer Style*/
 footer {
     height: 444px;
@@ -201,7 +219,7 @@ footer hr {
     margin-left: 8vw;
     margin-right: 8vw;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     column-gap: 5vw;
     flex-wrap: wrap;
     line-height: 40px;
@@ -211,4 +229,16 @@ footer hr {
     font-weight: 500;
     font-size: 16px;
     color: #b9b9b9;
+}
+
+.social-icon {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    column-gap: 3vw;
+}
+.social-icon .icon {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 25px;
 }
